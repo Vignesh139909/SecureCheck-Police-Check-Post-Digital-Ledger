@@ -14,7 +14,6 @@ SecureCheck is a police data dashboard built using **Streamlit** and connected t
 - [Dashboard Explanation](#dashboard-explanation)
 - [Advanced Analytics](#advanced-analytics)
 - [Violation & Outcome Prediction](#violation--outcome-prediction)
-- [Contributing](#contributing)
 
 ---
 
@@ -58,21 +57,29 @@ driver_race, violation, search_conducted, search_type,
 drugs_related_stop, stop_outcome, stop_duration, is_arrested, country
 
 ---
-Update the database connection section in Records.py:
+## Update the database connection section in Records.py:
+
 mydb = mysql.connector.connect(
     host='localhost',
     user='root',
     password='your_password',
     database='Securecheck_ledger'
 )
+
 ---
 ## Run the app
+
 streamlit run Records.py
+
 ---
 ## Usage
+
 Once running, visit http://localhost:8501 in your browser.
 
+---
+
  ## 🔍 Filter & View Logs
+ 
 - Select from date range, gender, country, drugs, arrests
 
 - View filtered stop data
