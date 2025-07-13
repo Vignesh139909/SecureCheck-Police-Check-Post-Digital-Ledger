@@ -2,7 +2,7 @@
 
 **Real-time analytics and decision support for traffic enforcement.**
 
-SecureCheck is a police data dashboard built using **Streamlit** and connected to a **MySQL database**. It helps law enforcement analyze and visualize daily traffic stop logs, run advanced analytics, and even predict outcomes and violations based on historical patterns.
+SecureCheck is a police data dashboard built using **Streamlit** and connected to a **MySQL database**. It helps law enforcement analyze and visualize daily traffic stop logs, run advanced analytics, and even retrieve  outcomes and violations based on historical patterns.
 
 ---
 
