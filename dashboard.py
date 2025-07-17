@@ -654,7 +654,7 @@ elif page == "Analytics & Reports":
             st.header("Recently Added Records")
             db = connect_to_database()
             if db:
-                query = "SELECT * FROM police_stops ORDER BY stop_date DESC LIMIT 10"
+                query = "SELECT * FROM police_stops ORDER BY stop_date DESC,stop_time DESC LIMIT 10"
                 df_recent = pd.read_sql(query, db)
 
                 if not df_recent.empty:
