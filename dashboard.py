@@ -46,10 +46,6 @@ st.markdown("""
             color: darkblue!important;
         }
 
-        section[data-testid="stSidebar"] {
-            color: darkblue !important;
-        
-        }
     [data-testid="stAppViewContainer"] {
         background-image: url("https://i.ibb.co/k62fBtFf/Lowering-the-opacity.png");
         background-size: cover;
@@ -551,7 +547,6 @@ elif page == "Analytics & Reports":
                 violation = st.selectbox("Violation",["Speeding","Other","DUI","Seatbelt","Signal"])
                 search_conducted = st.selectbox("Was a Search Conducted?", ["1","0"])
                 search_type = st.selectbox("Search Type",["Vehicle Search","No Search","Frisk","Unknown"])
-                is_arrested = st.selectbox("is_arrested?",["1","0"])
                 drugs_related_stop = st.selectbox("drugs_related_stop", ["1","0"])
                 stop_duration = st.selectbox("Stop Duration", ["16-30 Min","0-15 Min", "30+ Min"])
 
@@ -585,7 +580,7 @@ elif page == "Analytics & Reports":
 
                 search_conducted_val = 1 if search_conducted else 0
                 drugs_related_stop_val = 1 if drugs_related_stop else 0
-                is_arrested_val = 1 if is_arrested else 0
+                is_arrested_val = 1 if stop_outcome == "Arrest" else 0
 
                 try:
                     query = """
