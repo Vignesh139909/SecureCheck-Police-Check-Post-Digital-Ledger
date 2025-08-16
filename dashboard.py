@@ -139,7 +139,7 @@ elif page == "Analytics & Reports":
                 return None
             return r.json()
 
-        lottie_animation = load_lottieurl("https://lottie.host/7a14797c-3147-4fee-be69-e72094ebf86c/nBFMhiTF5v.json")
+        lottie_animation = load_lottieurl("https://lottie.host/dbb1df14-bbdc-4860-8e69-0155324ed160/RPTayiD5GJ.json")
 
         with st.sidebar:
             st_lottie(lottie_animation, speed=1, width=250, height=300, key="welcome_anim")
@@ -368,7 +368,7 @@ elif page == "Analytics & Reports":
                 return None
             return r.json()
 
-        lottie_animation = load_lottieurl("https://lottie.host/5eb57e97-07d1-4e6f-8b96-e34ee35bce8f/jNCim6jNHw.json")
+        lottie_animation = load_lottieurl("https://lottie.host/7a14797c-3147-4fee-be69-e72094ebf86c/nBFMhiTF5v.json")
 
         with st.sidebar:
             st_lottie(lottie_animation, speed=2, width=300, height=600, key="welcome_anim")
